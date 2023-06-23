@@ -8,14 +8,15 @@
     font-size: 1em;
 }
 
+html, body {
+    min-height: 100vh;
+    background-color: grey;
+}
+
 :root {
     --font1:'Passion One', 'cursive', 'Arial', 'Helvetica';
     --font2:'Sriracha', 'cursive';
     --font3: Verdana, Tahoma, sans-serif;   
-}
-
-body {
-    background-color: grey;
 }
 
 header {
@@ -27,6 +28,7 @@ header {
  header > h1 {
     font-family: var(--font1);
     font-size: 10vw;
+    font-variant: small-caps;
     padding-top: 50px;
 }
 
@@ -36,8 +38,7 @@ header > p {
 }
 
 header > p > a {
-    font-family: var(--font1);
-    font-size: 1.5em;
+    font-weight: bolder;
     color: white;
     text-decoration: none;
 }
@@ -46,38 +47,26 @@ header > p > a:hover {
     text-decoration: underline;
 }
 
-main {
-    background-color: rgb(255, 255, 255);
-}
-
-
 section {
-    padding: 60px 0px 39px 35px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 30px;
+    line-height: 2em;
 }
 
- section > p {
-    font-family: var(--font2);
-    font-size: 3em;
+section.normal {
+    background-color: white;
+    color: black;
 }
 
-#primeirafoto {
-   background: black url(imagens/background001.jpg) center right / cover fixed;
-}
-
-#primeirafoto > p {
-    background-color: rgba(0, 0, 0, 0.445);
+section.imagem {
+    background-color: rgb(44, 44, 44);
     color: white;
-    width: 43%;
 }
 
-#segundafoto {
-    background: black url(imagens/background002.jpg) bottom center / cover fixed;
-}
-
-#segundafoto > p {
-    background-color: rgba(0, 0, 0, 0.493);
-    color: white;
-    width: 43%;
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.281);
 }
 
 footer {
