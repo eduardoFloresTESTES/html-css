@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        div {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Formulário</h1>
+
+    <form action="cadastro.php" method="post">
+
+        <div>
+            <label for="inum">Média:</label>
+            <input type="range" name="numero" id="inum" min="0" max="6" value="3" oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival">3</output>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
