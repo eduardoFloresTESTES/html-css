@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais e mais formularios</title>
+    <style>
+        div {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com formularios</h1>
+
+    <form action="cadastro.php" method="post">
+        
+        <div>
+            <label for="iest">Estado:</label>
+            <select name="Estado" id="iest">
+
+                <s><option value="">--- Escolha ---</option>
+                <optgroup label="Regiões do Brasil">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RS">Rio grande do Sul</option>
+                </optgroup>
+
+                <optgroup label="Mais algumas Regiões">
+                    <option value="RN">Rio grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="MA">Maranhão</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="1siprof">
+                <datalist id="1siprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="DEV">Desenvolvedor</option>
+                </datalist>
+        </div>
+        
+        <p>
+            <label for="imsg">Menssagem:</label> <br>
+            <textarea name="imagem" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
